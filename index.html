@@ -22,7 +22,9 @@
   <meta name="twitter:title" content="TRAUN Services Ltd">
   <meta name="twitter:description" content="Marketing, business management and corporate support for ambitious international companies.">
 
-  <!-- Add canonical + og:url here once the final domain is connected. -->
+  <link rel="canonical" href="https://traunservices.com/">
+  <link rel="sitemap" type="application/xml" href="https://traunservices.com/sitemap.xml">
+  <meta property="og:url" content="https://traunservices.com/">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='22' width='100' height='100' fill='%2308111a'/%3E%3Cpath d='M18 25h64L62 43H53v31H38V43H18z' fill='%2365e7ff'/%3E%3Cpath d='M58 47h17L57 75H41z' fill='%236d72ff'/%3E%3C/svg%3E">
 
@@ -30,12 +32,32 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://traunservices.com/#organization",
     "name": "TRAUN Services Ltd",
     "legalName": "TRAUN SERVICES LTD",
+    "url": "https://traunservices.com/",
     "description": "International marketing, business management and corporate support company providing digital marketing, business development, operational coordination, market expansion and management support.",
     "telephone": "+35796671893",
     "areaServed": ["Cyprus", "Europe", "Canada", "Hong Kong", "International"],
-    "knowsAbout": ["Digital Marketing", "Online Marketing", "Business Management", "Business Development", "Market Expansion", "Operational Coordination", "Corporate Support", "Brand Positioning", "Business Introductions", "Startup Growth"]
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+35796671893",
+      "contactType": "business enquiries",
+      "areaServed": "International",
+      "availableLanguage": ["English"]
+    },
+    "knowsAbout": [
+      "Digital Marketing",
+      "Online Marketing",
+      "Business Management",
+      "Business Development",
+      "Market Expansion",
+      "Operational Coordination",
+      "Corporate Support",
+      "Brand Positioning",
+      "Business Introductions",
+      "Startup Growth"
+    ]
   }
   </script>
 
@@ -43,8 +65,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://traunservices.com/#website",
+    "url": "https://traunservices.com/",
     "name": "TRAUN Services Ltd",
     "description": "Official website of TRAUN Services Ltd.",
+    "publisher": {
+      "@id": "https://traunservices.com/#organization"
+    },
     "inLanguage": "en"
   }
   </script>
@@ -79,6 +106,25 @@
     @media(max-width:640px){.wrap{width:min(var(--max),calc(100% - 24px))}.nav-inner{min-height:70px}.brand-tag{display:none}.hero{padding:64px 0 58px}h1{font-size:50px}.hero-copy{font-size:16px}section{padding:74px 0}.cards{grid-template-columns:1fr}.capability-grid{grid-template-columns:1fr}.capability-item{border-right:0!important;border-bottom:1px solid var(--line)!important}.capability-item:last-child{border-bottom:0!important}.highlight{padding:29px}form{grid-template-columns:1fr}.field.full,.submit,.form-note{grid-column:auto}.hero-visual{min-height:420px}.ring2{width:335px;height:335px}.ring1{width:225px;height:225px}.n2{right:-57px}.n4{left:-68px}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://traunservices.com/#webpage",
+    "url": "https://traunservices.com/",
+    "name": "TRAUN Services Ltd | Marketing, Business Management & Corporate Support",
+    "description": "TRAUN Services Ltd supports international companies with marketing, business management, growth support, operational coordination and corporate support.",
+    "isPartOf": {
+      "@id": "https://traunservices.com/#website"
+    },
+    "about": {
+      "@id": "https://traunservices.com/#organization"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
 </head>
 <body id="top">
   <canvas id="network" aria-hidden="true"></canvas>
